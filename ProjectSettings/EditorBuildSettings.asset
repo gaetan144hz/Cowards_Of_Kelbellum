@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/EVA_TestUI.unity
+    guid: 834d7e41201af3a4cb28bfec3598ed40
+  - enabled: 1
+    path: Assets/Scenes/EVA_TestShader.unity
+    guid: 422cf49e8a4448b40a5183ddb6054a26
   m_configObjects: {}
