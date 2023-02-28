@@ -248,8 +248,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 841895766}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -258,12 +257,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 183270012}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
         type: 3}
@@ -330,6 +329,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7cf10874a14dbea43b15f0cb5ead9de4, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6148737315974723067, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -337,12 +341,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 695e0b38348858742af7d9aaeb4a3d9d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31, type: 3}
---- !u!4 &841895766 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
-    type: 3}
-  m_PrefabInstance: {fileID: 841895765}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1225063816
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +462,13 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 841895765}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1624997352
+--- !u!95 &1624997353 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5e7bb60cbcdb12e40bfb3e0ee9442d31,
+    type: 3}
+  m_PrefabInstance: {fileID: 841895765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1624997354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -476,6 +480,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f87a31cfa1cfff0448d3601f2bfca0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1624997353}
+  isRunningHash: 0
+  isRollHash: 0
 --- !u!1 &2140542592
 GameObject:
   m_ObjectHideFlags: 0
