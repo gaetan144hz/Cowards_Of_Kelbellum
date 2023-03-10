@@ -356,7 +356,7 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _HighColor_Power: 0.361
+    - _HighColor_Power: 0
     - _HighlightOverridden: 0
     - _HighlightVisible: 1
     - _InvTilingScale: 1
@@ -492,7 +492,7 @@ Material:
     - _Tweak_MatcapMaskLevel: 0
     - _Tweak_RimLightMaskLevel: -0.66
     - _Tweak_ShadingGradeMapLevel: 0
-    - _Tweak_SystemShadowsLevel: 0.084
+    - _Tweak_SystemShadowsLevel: -0.192
     - _Tweak_transparency: 0
     - _UVBase: 0
     - _UVDetail: 0
