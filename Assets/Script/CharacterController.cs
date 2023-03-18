@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.InputSystem;
+using Unity.Netcode;
 
-public class CharacterController : MonoBehaviour
+public class CharacterController : NetworkBehaviour
 {
 
 
@@ -69,6 +70,7 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!IsOwner) return;
         currentTime = Time.time;
 
         handleAnimation();
