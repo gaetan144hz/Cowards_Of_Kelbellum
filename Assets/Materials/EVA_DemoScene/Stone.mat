@@ -108,7 +108,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NormalStrenght: 1
-    - _Normals_Blend_Amount: 0.16
+    - _Normals_Blend_Amount: 0.027
     - _Normals_Outline: 1
     - _Normals_Outline_Threshold: 1.4
     - _Normals_Saturation: 0
@@ -130,7 +130,7 @@ Material:
     - _Color: {r: 0.5879761, g: 0.64208966, b: 0.6886792, a: 1}
     - _Depth_Outline_Color: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Normals_Outline_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Normals_Outline_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5631371366741744856

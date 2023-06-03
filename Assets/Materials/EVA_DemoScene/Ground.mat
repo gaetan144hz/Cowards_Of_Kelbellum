@@ -123,7 +123,7 @@ Material:
     - _NormalStrenght: 1
     - _Normals_Blend_Amount: 0
     - _Normals_Outline: 0
-    - _Normals_Outline_Threshold: 0.01
+    - _Normals_Outline_Threshold: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
