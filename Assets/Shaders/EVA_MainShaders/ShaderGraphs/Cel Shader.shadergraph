@@ -8953,7 +8953,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "d3607dbb63414169a03fd954661ac0f1",
-    "m_Title": "OUTLINE DEPTH",
+    "m_Title": "OUTLINE NORMALS",
     "m_Position": {
         "x": -1645.0,
         "y": -2676.0

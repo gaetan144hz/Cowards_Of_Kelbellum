@@ -108,7 +108,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NormalStrenght: 1
-    - _Normals_Blend_Amount: 0.027
+    - _Normals_Blend_Amount: 0.134
     - _Normals_Outline: 1
     - _Normals_Outline_Threshold: 1.4
     - _Normals_Saturation: 0
