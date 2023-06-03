@@ -397,6 +397,8 @@ GameObject:
   - component: {fileID: 211297179}
   - component: {fileID: 211297178}
   - component: {fileID: 211297177}
+  - component: {fileID: 211297180}
+  - component: {fileID: 211297181}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -483,6 +485,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211297175}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &211297180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211297175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30268f576db8da8478dd25bcd989558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floating: 1
+  distance: 0.5
+  speed: 0.5
+--- !u!114 &211297181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211297175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26df2b5b6961902458b13bb49a1311cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotating: 1
+  clockwise: 1
+  rotationVector: {x: 0, y: 50, z: 0}
 --- !u!1001 &223350095
 PrefabInstance:
   m_ObjectHideFlags: 0
