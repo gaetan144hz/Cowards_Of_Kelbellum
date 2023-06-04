@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 248737101}
   - component: {fileID: 248737100}
   m_Layer: 0
-  m_Name: DataManager
+  m_Name: Data Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 338251102}
   - component: {fileID: 338251103}
   m_Layer: 0
-  m_Name: ScriptManager
+  m_Name: Scripts Manager
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
