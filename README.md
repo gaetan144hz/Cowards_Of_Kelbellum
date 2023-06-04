@@ -5,7 +5,7 @@
 A Unity Game Project made by some pretty smart, funny and definitely not sleep-depraved students. This is its Development Git.
 
 
-Custom URP Shaders for :
+With custom URP shaders for :
 - Objects
 - Water
 - Fire
