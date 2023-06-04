@@ -38,22 +38,23 @@ Material:
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
-    - _DepthFade: 1.77
+    - _DepthFade: 0.1
     - _DrawOrder: 0
     - _FoamDepth: 1
     - _FoamNoiseScale: 10
     - _FoamRippleSpeed: 0.3
     - _FoamWidth: 1
+    - _Metallic: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.95
     - _WaterHeight: 0.01
     - _WaterNoiseScale: 1
     - _WaterSpeed: 0.2
     m_Colors:
-    - _DeepColor: {r: 0.2978373, g: 0.45896333, b: 0.6509434, a: 0.7647059}
+    - _DeepColor: {r: 0.29783723, g: 0.45896322, b: 0.6509434, a: 0.8156863}
     - _FoamColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-    - _ShallowColor: {r: 0.42248127, g: 0.8057222, b: 0.8867924, a: 0.6392157}
+    - _ShallowColor: {r: 0.4224812, g: 0.8057222, b: 0.8867924, a: 0.80784315}
   m_BuildTextureStacks: []
 --- !u!114 &7056070403447568144
 MonoBehaviour:
