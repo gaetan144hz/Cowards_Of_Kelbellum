@@ -2,24 +2,8 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 
-<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .container {
-          display: flex;
-          width: 100%;
-          height: 300px;
-          background-color: black;
-          color: white;
-        }
-      </style>
-
-      <div class="container">
-        <h1>Hi there, my name is Nikola 👋</h1>
-      </div>
-    </div>
-  </foreignObject>
-</svg>
+<p align="center">
+  <img src="https://github.com/gaetan144hz/Cowards_Of_Kelbellum/blob/31bba71b29fd3bed8e97966b737b16865bb73754/TITLE.png?" width="70%" style="image-rendering: pixelated;" title="logo">
+</p>
 
 A Unity Game Project made by some pretty smart, funny and definitely not sleep-depraved students.
