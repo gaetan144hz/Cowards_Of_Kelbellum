@@ -3,16 +3,27 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DataManager : MonoBehaviour
 {
 
+    public static DataManager Instance { get; private set; }
+
     private string saveDir = @"\saves";
     public SaveData data = new SaveData();
 
-    void Start() 
+    private void Awake() 
     {
-
+        if (Instance != null)
+        {
+            Debug.Log("SINGLETON - Trying to create another singleton!");
+        }
+        else 
+        {
+            Instance = this;
+            DontDestroyOnLoad(Instance);
+        }
     }
 
 //SAVE
@@ -44,7 +55,47 @@ public class DataManager : MonoBehaviour
 
         DateTime now = DateTime.Now;
         targetData.saveDate = "" + now;
+
+        targetData.charactersData = CreateCharacters();
     }
+
+    public List<Character> CreateCharacters()
+    {
+        List<Character> allChar = new List<Character>();
+
+        Character Boldric = new Character();
+        Boldric.characterName = "Boldric";
+        Boldric.unlocked = true;
+        Boldric.xp = 0;
+        allChar.Add(Boldric);
+
+        Character Groff = new Character();
+        Groff.characterName = "Groff";
+        Groff.unlocked = true;
+        Groff.xp = 0;
+        allChar.Add(Groff);
+
+        Character Elas = new Character();
+        Elas.characterName = "Elas";
+        Elas.unlocked = true;
+        Elas.xp = 0;   
+        allChar.Add(Elas);  
+
+        return allChar;   
+    }
+
+
+    //GETS
+    public List<Player> GetPlayers()
+    {
+        return data.players;
+    }
+
+    public List<Character> GetCharacters()
+    {
+        return data.charactersData;
+    }
+
 }
 
 
@@ -58,6 +109,25 @@ public class SaveData
 
     public List<Player> players = new List<Player>();
     public List<Character> charactersData = new List<Character>();
+
+    
+    //CLEAR PLAYER DATA FOR NEW GAME
+    public void ClearPlayers()
+    {
+        players.Clear();
+    }
+
+    //CREATE NEW PLAYER
+    public void NewPLayer(int playerIdx, string playerStr, int controlID, InputDevice id)
+    {
+        Player newPlayer = new Player();
+        newPlayer.playerIndex = playerIdx; 
+        newPlayer.playerString = playerStr; 
+        newPlayer.controllerID = controlID;
+        newPlayer.id = id;
+
+        players.Add(newPlayer); 
+    }
 }
 
 [System.Serializable]
@@ -66,7 +136,8 @@ public class Player
     public int playerIndex;
     public string playerString;
     public int controllerID;
-
+    public InputDevice id;
+    public int characterIndex;
 }
 
 [System.Serializable]

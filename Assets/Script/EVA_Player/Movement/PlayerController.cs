@@ -12,8 +12,11 @@ public class PlayerController : MonoBehaviour
     private float gravityValue = -9.81f; 
 
     private CharacterController controller;
+    private Animator animator;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
+
+    public bool faceAimDir;
 
     public Vector2 movementInput = Vector2.zero;
     public Vector2 aimInput = Vector2.zero;
@@ -26,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+
         cam = Camera.main.GetComponent<Camera>();
         screenSize = new Vector2(Screen.width, Screen.height);
         viewportSize = new Vector2(480, 270);
@@ -86,6 +90,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleMovement();
-        HandleAim();
+        if (!faceAimDir)
+        {
+            HandleAim();
+        }
+
     }
 }

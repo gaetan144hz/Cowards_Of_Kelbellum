@@ -93,11 +93,13 @@ public class SaveManager : MonoBehaviour
     public void CreateSave()
     {
         datam.SaveJson(datam.data, numberOfUsedSaves);
+        GoToNext(numberOfUsedSaves);
     }
 
     public void ReadSave(int saveIndex)
     {
         datam.LoadJson(datam.data, saveIndex);
+        datam.data.ClearPlayers();
     }
 
 

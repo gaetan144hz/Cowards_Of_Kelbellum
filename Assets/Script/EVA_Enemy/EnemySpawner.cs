@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     public float spawnRate = 5f;
     public float lastSpawnTime = 5f;
-
+    public int enemySpawned = 0;
 
     void Update()
     {
@@ -21,7 +21,13 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, transform.position, transform.rotation);
+        var spawned = Instantiate(enemyPrefab, transform.position, transform.rotation);
+        if (enemySpawned % 16 == 15)
+        {
+            spawned.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
+            spawned.SendMessage("ApplyDamage", -150f);
+        }
+        enemySpawned += 1;
         lastSpawnTime = Time.time;
     }
 

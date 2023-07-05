@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public float enemySpeed = 1f;
+    public float attackDamage = 3f;
 
     GameObject[] players;
     public GameObject closestPlayer;
@@ -42,7 +43,22 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 move = (closestPlayer.transform.position - transform.position);
         move.Normalize();
+        move.y = 0;
         rb.velocity = (move * enemySpeed);
+    }
+
+    public void GetKnockback(Vector3 knockback)
+    {
+        knockback.y = 0.05f;
+        transform.position = transform.position + knockback;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "PlayerObjects")
+        {
+            collision.gameObject.transform.parent.gameObject.transform.parent.gameObject.SendMessage("ApplyDamage", attackDamage);
+        }
     }
 
 }

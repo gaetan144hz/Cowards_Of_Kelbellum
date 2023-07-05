@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EVA_Dev/DemoScene.unity
-    guid: 12d5ba1517f1a0941ba06a63db704c3b
+    path: Assets/Scenes/EVA_Core/0_MENU.unity
+    guid: 9d6efb9c17b957a41a60e5aea574b7a0
+  - enabled: 1
+    path: Assets/Scenes/EVA_Core/1_SCENE.unity
+    guid: a8660ec8b532ac049a5cd8382bcf2b37
   m_configObjects: {}

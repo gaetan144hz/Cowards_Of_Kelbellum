@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - PlayerPrefab
+  - PlayerObjects
+  - CharacterSelection
   layers:
   - Default
   - TransparentFX
@@ -12,7 +15,7 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
+  - Projectile
   - 
   - 
   - 
