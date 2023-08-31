@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29ac25cdab467a468471c7f80fd5f1b, type: 3}
+  m_Name: Character Stats Profile
+  m_EditorClassIdentifier: 
+  strenght: 1
+  dexterity: 1
+  arcana: 1
+  strResistance: 1
+  dexResistance: 1
+  arcResistance: 1
+  critChance: 1
+  lifeSteal: 1
+  attackSpeed: 1
+  speed: 1
+  hitPoints: 50

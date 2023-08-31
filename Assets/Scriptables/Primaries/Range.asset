@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a65cef58ded8a4e9426861098ab9a1, type: 3}
+  m_Name: Range
+  m_EditorClassIdentifier: 
+  pType: 1
+  baseDamage: 10
+  damage: 10
+  baseRange: 25
+  range: 25
+  baseKnockback: 2
+  knockback: 2
+  baseAttackSpeed: 3
+  attackSpeed: 3
+  projectileSpeed: 40
+  projectilePrefab: {fileID: 1072354275717227040, guid: a4c3faa61baa4c14eb5c9718600e1070,
+    type: 3}

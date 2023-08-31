@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df44dcb3d39ea2743a696bb1e815f7db, type: 3}
+  m_Name: Boldric
+  m_EditorClassIdentifier: 
+  baseSpeed: 5
+  speed: 0
+  baseHealth: 50
+  health: 0
+  baseStrenght: 1.1
+  strenght: 0
+  baseDexterity: 0.7
+  dexterity: 0
+  baseArcana: 0.5
+  arcana: 0
+  baseCritChance: 0
+  critChance: 0
+  baseLifeSteal: 0
+  lifeSteal: 0
+  baseStrRes: 1
+  strRes: 0
+  baseDexRes: 1
+  dexRes: 0
+  baseArcRes: 1
+  arcRes: 0

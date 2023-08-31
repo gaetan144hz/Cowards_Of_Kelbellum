@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EVA_Core/0_MENU.unity
+    path: Assets/Scenes/EVA_Core/0_Menu/0_MainMenu.unity
     guid: 9d6efb9c17b957a41a60e5aea574b7a0
   - enabled: 1
-    path: Assets/Scenes/EVA_Core/1_SCENE.unity
-    guid: a8660ec8b532ac049a5cd8382bcf2b37
+    path: Assets/Scenes/EVA_Core/1_Nohoak/Nohoak/1_Nohoak.unity
+    guid: a0a939b15e0d3814895ac2d7ec8596a4
+  - enabled: 1
+    path: Assets/Scenes/EVA_Core/1_Nohoak/Inn/1_Inn.unity
+    guid: 8f09d26db13959f419bc39d0c1747d86
+  - enabled: 1
+    path: Assets/Scenes/EVA_Core/1_Nohoak/Clerc Fort/1_ClercFort.unity
+    guid: 96acad28fa95aeb4180b5dbe26c94a35
+  - enabled: 1
+    path: Assets/Scenes/EVA_Core/Links/Link_1_2.unity
+    guid: 25c505059db16384c883321ebb1b2b90
   m_configObjects: {}
